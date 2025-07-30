@@ -5,10 +5,10 @@
   "version": "0.1.3",
   "license": "MIT",
   "scripts": {
+    "build": "NODE_OPTIONS='--max_old_space_size=2048' react-scripts build",
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build --prerenderUrls ./prerender-urls.js",
     "dev": "preact watch --prerender --prerenderUrls ./prerender-urls.js",
     "lint": "eslint src",
     "test": "jest"
